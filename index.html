@@ -1,11 +1,17 @@
-<title>fam</title>
+<head>
+	<title>fam</title>
+	<link rel="stylesheet" href="fam.css">
+</head>
 
 <!-- fam -->
-<fam>fam</fam>
+<body>
+	<fam></fam>
 
-<script>
-setInterval(function() {
-	var fam	= document.querySelector("fam");
-	fam.innerHTML = fam.innerHTML + " fam"
-}, 50)
-</script>
+	<script>
+	window.fam = document.querySelector("fam");
+	setInterval(function() {
+		window.fam.innerHTML = window.fam.innerHTML + " fam";
+	}, 25)
+	</script>
+</body>
+
